@@ -13,7 +13,7 @@ pipeline{
                 success{
                     echo "========A executed successfully========"
                     // archiveArtifacts
-                    archiveArtidacts artifacts: '**/*.war'
+                    archiveArtifacts artifacts: '**/*.war', followSymlinks: false
                 }
             }
         }
